@@ -64,7 +64,7 @@ Cập nhật mục này khi thêm thư mục mới.
 - Tạo Pull Request nhỏ, có ít nhất 1 người review rồi mới merge.
 - Viết commit message rõ ràng, ví dụ `Them hitbox tu lanh`, không viết `update` hay `fix`.
 - Không đẩy `.venv/`, `.idea/`, `.vscode/`, `__pycache__/` lên Git (đã có trong `.gitignore`).
-- Họp ngắn 15 phút vào thứ Hai và thứ Năm.
+- Họp thường xuyên
 
 ## Cách commit và push bằng PyCharm
 
