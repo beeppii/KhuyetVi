@@ -66,6 +66,23 @@ Cập nhật mục này khi thêm thư mục mới.
 - Không đẩy `.venv/`, `.idea/`, `.vscode/`, `__pycache__/` lên Git (đã có trong `.gitignore`).
 - Họp ngắn 15 phút vào thứ Hai và thứ Năm.
 
+## Cách commit và push bằng PyCharm
+
+Làm theo thứ tự này mỗi khi bắt đầu một việc mới:
+
+1. **Cập nhật code mới nhất.** Chuyển về nhánh `main`, nhấn **Ctrl+T** (Update Project) để kéo code của cả nhóm về máy.
+2. **Tạo nhánh mới cho việc của bạn.** Bấm vào tên nhánh ở thanh trên cùng (đang ghi `main`), chọn **New Branch...**, đặt tên theo quy tắc ở trên (ví dụ `A/di-chuyen-mu`), bấm **Create**. Nếu không thấy, mở menu ☰, chọn **Git**, rồi **New Branch...**
+3. **Code xong một phần nhỏ thì commit.** Nhấn **Ctrl+K** để mở khung Commit. Kiểm tra danh sách file: chỉ tick những file bạn muốn commit và **không được có** `.venv` hay `.idea`. Viết message rõ ràng (ví dụ `Them hitbox tu lanh`), rồi bấm **Commit**.
+4. **Push lên GitHub.** Nhấn **Ctrl+Shift+K** rồi bấm **Push**. Hoặc ở bước 3 bấm **Commit and Push** để làm cả hai việc cùng lúc. Lần đầu push một nhánh mới, PyCharm tự tạo nhánh đó trên GitHub.
+5. **Tạo Pull Request.** Mở trang repo trên github.com, bấm nút **Compare & pull request**, viết vài dòng mô tả bạn đã làm gì, chọn một bạn làm **Reviewer**, bấm **Create pull request**.
+6. **Review và merge.** Người review đọc code, nếu ổn thì bấm **Merge pull request**. Sau đó mọi người quay về `main` và nhấn **Ctrl+T** để cập nhật.
+
+Lưu ý:
+
+- Commit nhỏ và thường xuyên, mỗi khi xong một việc nhỏ. Đừng dồn cả ngày mới commit.
+- Commit chỉ lưu trong máy của bạn. **Phải push** thì code mới lên GitHub.
+- Nếu PyCharm báo xung đột (conflict) hoặc push bị từ chối (rejected), **không bấm Force Push**. Nhắn nhóm để cùng xử lý.
+
 ## Mốc tiến độ
 
 | Mốc | Ngày | Kết quả |
