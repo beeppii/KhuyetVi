@@ -6,6 +6,6 @@ while running:
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
             running = False
-    screen.fill((30, 30, 60))
+    screen.fill((200, 110, 10))
     pygame.display.flip()
 pygame.quit()
